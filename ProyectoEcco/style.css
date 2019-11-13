@@ -1,49 +1,52 @@
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Heebo|Source+Sans+Pro&display=swap" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+/* fondo animado */
+html {
+  height: 80%;
+  /* max-height: 600px; */
+  width: 600px;
+  background-color: hsla(200,40%,30%,.4);
+  background-image:       
+      url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+      url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+      url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+      url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+      url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+  background-repeat: repeat-x;
+  background-position: 
+      0 20%,
+      0 100%,
+      0 50%,
+      0 100%,
+      0 0;
+  background-size: 
+      2500px,
+      800px,
+      500px 200px,
+      1000px,
+      400px 260px;
+  animation: 70s para infinite linear;
+  }
 
+@keyframes para {
+  100% {
+      background-position: 
+          -5000px 20%,
+          -800px 95%,
+          500px 50%,
+          1000px 100%,
+          400px 0;
+      }
+  }
+/* hasta aqui el background animado */
+  
+/* roboto para titulos */
 
 *:after {
   box-sizing: inherit;
   margin: 0px 0px 0px 0px;
+  width: 100%;
 }
-
-.textofinal{
- text-align: center;
-}
-h1{ 
-  text-align: center;
-  background: rgba(0, 0, 0, 0.733);
-  background-size: cover;
-  font-family: 'Heebo', sans-serif;
-  color: white;
-}
-h2{ 
-  text-align: center;
-  font-family: 'Roboto Condensed', sans-serif;
- color: white;
-}
-p{ 
-  margin: 1px 15px;
-  
-  font-family: 'Source Sans Pro', sans-serif;
- color: white;
-}
-.derecho{background:rgba(0, 0, 0, 0.733);
- grid-area: d; 
-}
-.genero {
-  background: 
-rgba(0, 0, 0, 0.733);
-grid-area: g;
-}
- .sustentable{background:  rgba(0, 0, 0, 0.733);
-  grid-area: s; 
- }
  
- .logo{
+.logo{
   transform:matrix(1,0,0,1,0,0);
   transition:transform 0.5s ease 0s;
   }
@@ -52,8 +55,7 @@ grid-area: g;
   transform:matrix(1.4,-0.54,0.54,1.4,0,0);
   }
 
- .logo{
-   
+ .logo{   
   grid-area: f;
   background-image: url(Imagenes/SVG/Recurso\ 2.svg);
  overflow: hidden;
@@ -61,8 +63,45 @@ grid-area: g;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1fr;
-
 }
+
+/* pilares de trabajo */
+h1{ 
+  text-align: center;
+  background: rgba(0, 0, 0, 0.733);
+  background-size: cover;
+  font-family: 'Heebo', sans-serif;
+  color: white;
+}
+/* estado de derecho o algo asi */
+.derecho{background:rgba(0, 0, 0, 0.733);
+  grid-area: d; 
+ }
+
+p{ 
+  margin: 1px 15px;
+  
+  font-family: 'Source Sans Pro', sans-serif;
+ color: white;
+}
+/* --- */
+.genero {
+  background: 
+rgba(0, 0, 0, 0.733);
+grid-area: g;
+}
+h2{ 
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+ color: white;
+}
+ .sustentable{background:  rgba(0, 0, 0, 0.733);
+  grid-area: s; 
+ }
+
+.textofinal{
+  text-align: center;
+ }
  
 @media (min-width: 796px) {
  
@@ -82,6 +121,7 @@ grid-area: g;
  {
    margin: 0;
    padding: 0;
+   width: 100vw;
    
    /* make it look decent enough */
    
@@ -90,23 +130,21 @@ grid-area: g;
    
  }
  
- a
- {
+ a{
    text-decoration: none;
    color:white;
    
    transition: color 0.3s ease;
  }
+ 
  a:active{
    color: wheat;
  }
- a:hover
- {
+a:hover{
    color:black;
  }
  
- #menuToggle
- {
+ #menuToggle{
    display: block;
    position: fixed;
    top: 25px;
@@ -118,8 +156,7 @@ grid-area: g;
    user-select: none;
  }
  
- #menuToggle input
- {
+ #menuToggle input{
    display: block;
    width: 40px;
    height: 32px;
@@ -234,7 +271,7 @@ grid-area: g;
  }
 
 /*nav*/
-
+/* cabecera eccopoli que se mueve  */
   .cabecera{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -264,12 +301,12 @@ h1{
   font-size: 200px;
   font-family:'Roboto Condensed', sans-serif;
 }
-.background{
+/* .background{
   background-image: url(Imagenes/fondo.jpg);
   position: relative;
   background-attachment: fixed;
   background-size: cover;
-}
+} */
 
 
 .cabecera{
@@ -281,9 +318,6 @@ h1{
   background-size: cover;
   overflow: hidden;
   position: relative;
- 
-
-
  
 }
 .menubar{
@@ -426,6 +460,7 @@ p{
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
+
   /*nav*/
 /*
  * Made by Erik Terwan
@@ -457,8 +492,7 @@ p{
    
  }
  
- a
- {
+ a{
    text-decoration: none;
    color:white;
    
@@ -467,8 +501,8 @@ p{
  a:active{
    color: wheat;
  }
- a:hover
- {
+
+ a:hover{
    color:black;
  }
  
@@ -601,7 +635,8 @@ p{
  }
 
 /*nav*/
-  .cabecera{
+/* hasta aqui el menu de hambuguesa */
+.cabecera{
     background-color: rgba(255, 255, 255, 0.185);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -713,8 +748,6 @@ p{
   background-position: center;
 }
 
-  
- }
  .textofinal{
    grid-area: fi;
   text-align: center;
