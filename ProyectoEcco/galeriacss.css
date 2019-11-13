@@ -317,8 +317,7 @@ a {
   flex: 7;
 }
 .item-1 { 
-  background-image: url(Imagenes/galeriamini/P1070789.jpg)
-  
+  background-image: url(Imagenes/galeriamini/P1070789.jpg);
 }
 .item-2 { 
   background-image: url('Imagenes/galeriamini/P1080017.jpg');
