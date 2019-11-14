@@ -1,8 +1,9 @@
 /* fondo animado */
-html {
+/* html */
+.background {
   height: 80%;
   /* max-height: 600px; */
-  width: 600px;
+  width: 100%;
   background-color: hsla(200,40%,30%,.4);
   background-image:       
       url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
@@ -274,8 +275,8 @@ a:hover{
 /* cabecera eccopoli que se mueve  */
   .cabecera{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 300px 1fr 1fr;
+  grid-template-columns: 25% 1fr 25%;
+  grid-template-rows: 1fr 25% 1fr 1fr;
   grid-template-areas: 
   ". . ."
   ". f ."
@@ -366,10 +367,10 @@ li a:hover {
   background-color: rgba(255, 255, 255, 0.185);
   background-size: cover;
   display: grid;
-  grid-template-columns: 60px  1fr 1fr 60px  1fr 60px;
-  grid-template-rows: 35px 200px 400px 400px 400px 80px;
-  margin: 0px;
-  grid-row-gap: 10px;
+  grid-template-columns: 4.5% 1fr 1fr 4.5% 1fr 4.5%;
+  grid-template-rows: 2% 26% 26% 26% 5%;
+  margin: 0%;
+  grid-row-gap: 1%;
   grid-template-areas: 
   
   ". . . . . ."
