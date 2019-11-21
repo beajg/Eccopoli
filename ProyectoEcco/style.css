@@ -274,6 +274,7 @@ a:hover{
 /*nav*/
 /* cabecera eccopoli que se mueve  */
   .cabecera{
+ 
   display: grid;
   grid-template-columns: 25% 1fr 25%;
   grid-template-rows: 1fr 25% 1fr 1fr;
