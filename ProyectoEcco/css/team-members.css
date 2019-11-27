@@ -1,0 +1,26 @@
+*{
+	font-family: 'Heebo', sans-serif;
+}
+
+img.clipped-border{
+	-webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+	 clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+	 padding:10;
+	 background:linear-gradient(#6D871B,lightgrey);
+	 width:var(--border-width);
+	 height:var(--border-height);
+	 max-height:250px;
+	 max-width:250px;
+	 height: 60vh;
+	 width: 60vw;
+	 transition:transform 0.2s;
+	 display:block;
+	 margin:auto;
+  }
+div.nombre{
+	display: inline;
+}
+h1#nombre{
+	justify-content: center;
+	display: flex;
+}
