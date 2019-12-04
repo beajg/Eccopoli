@@ -1,7 +1,8 @@
 /* RESET */
 html,body{
     width: 100%;
-    height: 100%;
+	height: 100%;
+	font-family: 'Quicksand', sans-serif;
   }
   
 *:after {
@@ -10,34 +11,37 @@ html,body{
   }
   
   /* TÍTULO "EQUIPO" */
+
+
+
+div.equipo{
+	text-align: center;
+	background: rgba(10, 10, 10, 0.5);
+	background-size: 100%;
+	width: 100%;
+	height: 100px;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	padding: 8px;
+	line-height: 40px;
+}
+
 h1{ 
     text-align: center;
-    background: rgba(0, 0, 0, 0.733);
     background-size: cover;
-    font-family: 'Heebo', sans-serif;
-    color: white;
+    font-family: 'Quicksand', sans-serif;
+	color: white;
+	font-size: 50px;
+	justify-content: center;
+	margin: auto;
+	
+	padding: 8px;
+	line-height: 40px;
   }
+h3{
+	font-family: 'Quicksand', sans-serif;
+}
 
-  /*LOGO*/ 
-.logo{
-    transform:matrix(1,0,0,1,0,0);
-    transition:transform 0.5s ease 0s;
-    }
-    
-.logo:hover{
-    transform:matrix(1.4,-0.54,0.54,1.4,0,0);
-    }
-  
-.logo{
-     
-    grid-area: f;
-    background-image: url(imgsteam/Logo.svg);
-   overflow: hidden;
-    z-index: 3;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1fr;
-  }
    
   @media (min-width: 796px) {
 
@@ -45,9 +49,12 @@ h1{
 /* GENERAL */
 body{
      margin: 0;
-     padding: 0;
+	 padding: 0;
+	 bottom: 0;
      color:white;
-     font-family: "Avenir Next", "Avenir", sans-serif;
+	 font-family: 'Quicksand', sans-serif;
+	 width: 100%;
+	 height: 100%;
    }
    
    a
@@ -181,9 +188,6 @@ body{
      font-size: 30px;
    }
    
-   /*
-    * And let's slide it in from the left
-    */
    #menuToggle input:checked ~ ul {
      transform: none;
    }
@@ -192,18 +196,8 @@ body{
   
 .cabecera{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100fr 300px 1fr 100fr;
-    grid-template-areas: 
-    ". . ."
-    ". f ."
-    ". e ."
-    ". . ."
-  }
+  } 
   
-h1{
-    font-size: 50px;
-  }
 .eco{
     transform:matrix(1,0,0,1,0,0);
     transition: transform 0.5s ease 0s;
@@ -218,17 +212,37 @@ h1{
     grid-area: e;
     color: white;
     font-size: 200px;
-    font-family:'Roboto Condensed', sans-serif;
+    font-family:'Quicksand', sans-serif;
   }
   .background{
     background-image: url(imgsteam/fondo.jpg);
     position: relative;
     background-attachment: fixed;
-    background-size: cover;
+	background-size: cover;
+	width: 100%;
+    height: 100%;
   }
   
+  .contenido{
+    gap: 20px;
+    background-size: cover;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100% ;
+    grid-template-rows: 4rem 4rem ;
+    margin: 0px 0px 0px 0px;
+    grid-row-gap: 0px;
+    grid-template-areas: 
+    
+    "."
+    "c"
+    "."
+   
+	;
+	font-family: 'Quicksand', sans-serif;
+  }
   
-  .cabecera{
+  /* .cabecera{
     background-color: rgba(255, 255, 255, 0.185);
     z-index: 2;
     width: 100%;
@@ -237,7 +251,8 @@ h1{
     background-size: cover;
     overflow: hidden;
     position: relative;
-  }
+  } */
+
   .menubar{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -266,28 +281,23 @@ div.secciones{
 }
 
 
-
-
-
-
-
-
-
-
 /* GALLERY */
 :root{
 	--width: 100%;
-	--height: 100%;
-	--border-width: 200px;
-	--border-height: 200px;
-  
+	background-color: black;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif!important;
+	height: -200%;
   }
   
-  div.gallery{
+.gallery{
 	position: relative;
+	justify-content: center;
+	top: 10%;
 	height:100%;
-	width:100%;
+	width:50%;
 	left: 11%;
+	font-family: 'Quicksand', sans-serif!important;
 
   }
   
@@ -309,6 +319,8 @@ div.secciones{
 	font-size: 1em;
 	text-align: center;
 	color: white;
+	font-family: 'Quicksand', sans-serif!important;
+	background-color: #23232362;
 
   }
 
@@ -316,8 +328,9 @@ div.secciones{
    	justify-content: center;
 	align-items: center;
 	vertical-align: middle;
-	line-height: 10px;
-	bottom: 5%;
+	line-height: 6px;
+	padding: 7px 45px 0px 45px;
+	left: 12px;
   }
 
 
@@ -325,38 +338,50 @@ div.secciones{
   padding: left 20px;
   margin: 0px 0px 0px 20px;
   line-height: 10px;
+  padding: 7px 60px 6px 60px;
+  left: -8px;
 }
 
 div a h3#jesula{
 	padding: left 20px;
 	margin: 0px 0px 1px 50px;
 	line-height: 10px;
+	padding: 7px 90px 6px 90px;
+	left: -42px;
 }
 
 div a h3#travis{
 	padding: left 20px;
 	margin: 0px 0px 1px 17px;
 	line-height: 10px;
-	bottom: 10%;
+	bottom: 7%;
+	padding: 7px 90px 0px 90px;
+	left: -42px;
 }
 
 div a h3#vikram{
 	padding: left 20px;
 	margin: 0px 0px 1px 13px;
 	line-height: 10px;
-	bottom: 10%;
+	bottom: 7%;
+	padding: 7px 90px 0px 90px;
+	left: -40px;
 }
 
 div a h3#robert{
 	padding: left 20px;
 	margin: 0px 0px 1px 39px;
 	line-height: 10px;
+	padding: 7px 90px 5px 90px;
+	left: -42px;
 }
 
 div a h3#ayesha{
 	padding: left 20px;
 	margin: 0px 0px 1px 46px;
 	line-height: 10px;
+	padding: 7px 90px 5px 90px;
+	left: -42px;
 }
   
   .clipped-border{
@@ -374,6 +399,7 @@ div a h3#ayesha{
 	 position:absolute;
 	 cursor:pointer;
 	 align-items: center;
+	 font-family: 'Quicksand', sans-serif!important;
   }
   
   .clipped-border:before{
@@ -447,6 +473,7 @@ div a h3#ayesha{
 	.clipped-border{
 	  width:100px;
 	  height:100px;
+	  font-family: 'Quicksand', sans-serif!important;
 	}
 	
 	.clipped-border:nth-child(2){
@@ -476,7 +503,15 @@ div a h3#ayesha{
 		top:164px;
 		left:200px;
 	  }
-  }
+}
+/* div.footer{
+		background:black;
+		font-size: 15px;
+		text-align: center;
+		font-family: 'Quicksand', sans-serif;
+		bottom: 0px;
+	  }  */
+
 
 
 

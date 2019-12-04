@@ -56,6 +56,7 @@
     margin: 0px 0px 0px 0px;
     grid-row-gap: 0px;
     grid-template-areas: 
+
     
     "."
     "c"
@@ -175,6 +176,7 @@
    {font-family:'Roboto Condensed', sans-serif;
      padding: 20px 0;
      font-size: 30px;
+     color: white;
    }
 
    #menuToggle input:checked ~ ul
@@ -292,8 +294,7 @@ img{
 
   .clipped {
 	-webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-	clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-	
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 	}
 	
 	.clipped-border:hover{
@@ -320,7 +321,8 @@ div.informacion p{
   }
 
   }
-  }}
+  }
+}
 
 /* IMAGEN INICIO */
 img{
