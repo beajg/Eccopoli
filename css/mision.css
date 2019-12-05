@@ -277,52 +277,44 @@ text-align: center;
   }
 .grid-container {
     display: grid;
-    height: 100vh;
-    width: 100vw;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
-	grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
-    grid-gap: 5px;
+    background-size: cover;
+    background-color: rgba(44, 86, 141, 0.509);
+    grid-template-columns: 20% 20% 20% 20% 20% ;
+	grid-template-rows: 20% 20% 20% 20% 20%  ;
+    
     grid-template-areas:
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . .";
+    "t t t t t"
+    ". . . . ."
+    "p p p p p"
+    ". . . . ."
+    "s s s s s"
+  ;
 }
 
-h1 {
-    font-family: 'Roboto Condensed', sans-serif;
+
+.title{
+  grid-area: t;
+  font-family: 'Roboto Condensed', sans-serif;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px #000000;
-    grid-column: 2 / 6;
-    grid-row: 2 / 3;
+    font-size: 30px;
     z-index: 2;
-    align-items: flex-end;
+    text-align: center;
     margin-top: 2rem;
 }
-
 .pgraph {
+size: cover;
+  grid-area: p;
     color: rgb(255, 255, 255);
     padding: 0 3rem 3rem 3rem;
     font-family: 'Quicksand', sans-serif;
-    font-size: 10pt;
-    grid-column: 2 / 10;
-    grid-row: 3 / 7;
+    font-size: 20px;
     justify-content: center;
     z-index: 2;
 }
 
 
-.back-img {
-    background-color: rgb(44, 86, 141);
-    grid-column: 1 / 11;
-    grid-row: 1 / 7;
-}
+
 
 p {
     margin-top: 1rem;
@@ -335,14 +327,13 @@ ul {
 
 /*--------------------------SLIDER----------------------*/
 .slider {
-    width: 100%;
-    grid-column: 1 / 11;
-    grid-row: 7 / 10;
+   grid-area: s;
+
 	margin: auto;
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.63);
     z-index: 2;
 }
 
@@ -378,3 +369,9 @@ ul {
     75% {margin-left: -200%;}
     100% {margin-left: -200%;}
 }
+.foot{
+  size: cover;
+  background:black;
+  font-size: 20px;
+  text-align: center;
+  } 

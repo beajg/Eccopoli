@@ -171,24 +171,8 @@
    }
   
   /*nav*/
-  h1{ 
-    text-align: center;
-    background: rgba(0, 0, 0, 0.733);
-    background-size: cover;
-    font-family: 'Heebo', sans-serif;
-    color: white;
-  }
-  h2{ 
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-   color: white;
-  }
-  p{ 
-    margin: 1px 15px;
-    
-    font-family: 'Source Sans Pro', sans-serif;
-   color: white;
-  }
+  
+  
   .cabecera{
     display: grid;
     grid-template-columns: 25% 1fr 25%;
@@ -199,16 +183,7 @@
     ". . ."
     ". e ."
   }
-  h1{
-text-align: center;
-  background: rgba(0, 0, 0, 0.733);
-  background-size: 100%;
-  width: 100%;
-  height: 40px;
-  font-family: 'Heebo', sans-serif;
-  color: white;
-  font-size: 30px;
-  }
+  
   
   .eco{
     transform:matrix(1,0,0,1,0,0);
@@ -301,73 +276,61 @@ text-align: center;
     
       grid-area: c;
   }
-.grid-container {
+  .container {
     background: none;
     display: grid;
-    height: 100vh;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
-	grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% ;
+    
+    grid-template-columns: 20% 20% 20% 20% 20% ;
+	grid-template-rows:20% 20% 20% 20% 20% ;
     grid-gap: 5px;
     grid-template-areas:
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . .";
+    ". . . . . "
+    "t t i i i "
+    "p p i i i "
+    "p p i i i "
+    "p p i i i ";
 }
 
-.imgback {
-    background: url(../images/mother-2427504_1920.jpg);
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-    grid-column: 4 / 11;
-    grid-row: 1 / 5;
-}
-
-h1 {
-    grid-column-start: 2;
-    grid-row-start: 3;
-    display: flex;
-    align-items: flex-end;
-    color: white;
+.titulo{
+  text-align: center;
+  grid-area: t;
+  color: white;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 50px;
-    text-shadow: 2px 2px 4px #000000;
     background: none;
     z-index: 3;
+  
+}
+.imgback {
+  grid-area: i;
+    background: url(../images/mother-2427504_1920.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+  
 }
 
-.back-text {
-    grid-column: 1 / 6;
-    grid-row: 5 / 8;
-    background: rgba(0, 0, 0, 50%);
-    border-radius: 15px;
-    z-index: 1;
-}
+
+
+
 
 .pgraph {
-    grid-column: 2 / 6;
-    grid-row: 5 / 8;
+  font-size: 20px;
+    grid-area: p;
+    background-color: #09090987;
     color: white;
     font-family: 'Quicksand', sans-serif;
-    background: none;
+   
     border-radius: 15px;
     justify-content: center;
     padding: 2rem;
     z-index: 2;
 }
 
-.p1::first-letter {
-    font-size: 3em;
-    color: rgba(255, 255, 255, 50%);
-    float: inline-start;
-    margin: 0 .2em 0 0;
-}
-
-p {
-    background: none;
-}
+.foot{
+  size: cover;
+  background:black;
+  font-size: 20px;
+  text-align: center;
+} 
